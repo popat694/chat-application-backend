@@ -97,6 +97,6 @@ app.use(mongosanitize());
 
 app.use(xss());
 
-app.use(routes);
+app.use("/api", require("./routes"));
 
 module.exports = app;
