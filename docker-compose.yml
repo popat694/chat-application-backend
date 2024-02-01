@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "50047:4000"
+      - "50048:4000"
     environment:
       - MONGO_URI=mongodb://mongo:27017/
     depends_on:
@@ -26,7 +26,7 @@ services:
     container_name: mongo_express
     image: mongo-express
     ports:
-      - "50048:8081"
+      - "50049:8081"
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongo
       - ME_CONFIG_MONGODB_PORT=27017
