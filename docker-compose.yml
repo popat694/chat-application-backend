@@ -12,7 +12,6 @@ services:
       - MONGO_URI=mongodb://mongo:27017/
     depends_on:
       - mongo
-    stdin_open: true
 
   mongo:
     container_name: mongodb
